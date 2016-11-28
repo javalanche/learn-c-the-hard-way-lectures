@@ -13,9 +13,18 @@ int main(int argc, char *argv[])
     int count = sizeof( ages ) / sizeof( int );
     int i = 0;
 
+    printf("----> normal way with array[i] syntax\n");
+
     // first way using indexing
     for (i = 0; i < count; ++i) {
         printf("%s has %d years alive.\n", names[i] , ages[i]);
+    }
+
+    printf("\n----> alternative syntx *(array+ i)\n");
+
+    // proves that arrays are really just another syntax for pointers
+    for (i = 0; i < count; ++i) {
+        printf("%s has %d years alive.\n", *( names + i ) , *( ages + i ));
     }
 
     printf("----\n");

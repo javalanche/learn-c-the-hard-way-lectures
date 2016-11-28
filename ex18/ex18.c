@@ -136,13 +136,13 @@ int main(int argc, char *argv[])
 
     free(numbers);
 
-    printf("SORTED:");
-    dump(sorted_order);
+    /*printf("SORTED:");*/
+    /*dump(sorted_order);*/
 
-    destroy(sorted_order);
+    /*destroy(sorted_order);*/
 
-    printf("SORTED:");
-    dump(sorted_order);
+    /*printf("SORTED:");*/
+    /*dump(sorted_order);*/
 
 
     return 0;
