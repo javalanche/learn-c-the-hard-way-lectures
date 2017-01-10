@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/*#define NDEBUG */
+
 void test_debug()
 {
     // notice you don't need the \n
